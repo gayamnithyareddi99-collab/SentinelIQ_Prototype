@@ -660,19 +660,16 @@ textarea.form-control{resize:vertical;min-height:110px}
 <nav class="sidebar">
   <div class="sidebar-brand">
     <div class="brand-logo">
-      <div class="brand-icon-wrap">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="white" opacity=".9"/>
-          <circle cx="12" cy="12" r="3" fill="#1A4FBF"/>
-        </svg>
-      </div>
+
+      <!-- logo removed -->
+
       <div class="brand-name">Sentinel<span>IQ</span></div>
     </div>
     <div class="brand-tagline">Governance Intelligence Platform · 2026</div>
   </div>
   <div class="sidebar-badge">
     <span class="live-dot"></span>
-    PLATFORM ACTIVE · UK INNOVATOR FOUNDER VISA
+    PLATFORM ACTIVE · UK SME Focus
   </div>
   <nav class="sidebar-nav">
     <div class="nav-label">Platform</div>
@@ -2087,135 +2084,146 @@ textarea.form-control{resize:vertical;min-height:110px}
     </div>
   </div>
 
-  <!-- ════════════════════════ PAGE: CONTACT ════════════════════════ -->
-  <div class="page" id="page-contact">
-    <div class="section">
-      <div class="section-header">
-        <div class="section-eyebrow">Get in Touch</div>
-        <h2>Request a Pilot or Ask a Question</h2>
-        <p>SentinelIQ is currently accepting expressions of interest from UK SMEs interested in participating in the pilot programme. Early adopters will receive preferential pilot access and direct input into the product development roadmap.</p>
-      </div>
+  <!-- PAGE: CONTACT -->
+<div class="page" id="page-contact">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h2>Request a Pilot or Ask a Question</h2>
+      <p>
+        SentinelIQ is currently accepting expressions of interest from UK SMEs interested in participating in the pilot programme. 
+        Early adopters will receive preferential pilot access and direct input into the product development roadmap.
+      </p>
+    </div>
 
-      <div class="contact-grid">
-        <div>
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- ✅ YOUR NEW ACCESS KEY -->
+        <input type="hidden" name="access_key" value="f5f68bce-d2bb-4e43-a208-09ebe0d89f91">
+
+        <input type="hidden" name="subject" value="New SentinelIQ Enquiry">
+        <input type="hidden" name="from_name" value="SentinelIQ Website">
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="name" class="form-control" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" class="form-control" placeholder="Your full name">
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="you@company.com">
-            </div>
-            <div class="form-group">
-              <label>Organisation Name</label>
-              <input type="text" class="form-control" placeholder="Company Ltd">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Number of Employees</label>
-              <select class="form-control">
-                <option>20–50</option>
-                <option>51–100</option>
-                <option>101–200</option>
-                <option>200+</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Industry Sector</label>
-              <select class="form-control">
-                <option>Professional Services</option>
-                <option>Logistics / Distribution</option>
-                <option>Manufacturing</option>
-                <option>Facilities Management</option>
-                <option>Healthcare Support</option>
-                <option>Other</option>
-              </select>
-            </div>
+            <label>Email Address</label>
+            <input type="email" name="email" class="form-control" placeholder="you@company.com" required>
           </div>
           <div class="form-group">
-            <label>Enquiry Type</label>
-            <select class="form-control">
-              <option>Request Pilot Programme Access</option>
-              <option>Request a Product Demo</option>
-              <option>General Enquiry</option>
-              <option>Investment Enquiry</option>
-              <option>Partnership Opportunity</option>
+            <label>Organisation Name</label>
+            <input type="text" name="company" class="form-control" placeholder="Company Ltd" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Employees</label>
+            <select name="employees" class="form-control">
+              <option>20–50</option>
+              <option>51–100</option>
+              <option>101–200</option>
+              <option>200+</option>
             </select>
           </div>
           <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" placeholder="Tell us about your current governance challenges or any questions you have about SentinelIQ..."></textarea>
-          </div>
-          <button class="form-submit" onclick="showToast('Thank you  we will be in touch within 2 business days.')">Submit Enquiry</button>
-        </div>
-
-        <div class="contact-info-card">
-          <h3>SentinelIQ</h3>
-          <p>Governance Intelligence Platform for UK SMEs. Built for the Innovator Founder Visa application, 2026.</p>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">Email</div>
-              <div class="contact-item-text">hello@sentineliq.co.uk</div>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">Location</div>
-              <div class="contact-item-text">United Kingdom</div>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">Response Time</div>
-              <div class="contact-item-text">Within 2 business days</div>
-            </div>
-          </div>
-          <div style="margin-top:28px;padding:18px;background:rgba(255,255,255,.07);border-radius:12px">
-            <div style="font-family:var(--font-mono);font-size:.6rem;color:rgba(255,255,255,.4);letter-spacing:.1em;margin-bottom:12px">CO-FOUNDERS</div>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div style="display:flex;align-items:center;gap:10px">
-                <div style="width:36px;height:36px;border-radius:10px;background:var(--blue-bright);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:.85rem;font-weight:800;color:#fff;flex-shrink:0">RS</div>
-                <div>
-                  <div style="font-size:.88rem;font-weight:600;color:#fff">RavirajSinh Saravaiya</div>
-                  <div style="font-size:.75rem;color:rgba(255,255,255,.5)">Technical Lead &amp; Product Development</div>
-                </div>
-              </div>
-              <div style="display:flex;align-items:center;gap:10px">
-                <div style="width:36px;height:36px;border-radius:10px;background:var(--blue-bright);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:.85rem;font-weight:800;color:#fff;flex-shrink:0">KP</div>
-                <div>
-                  <div style="font-size:.88rem;font-weight:600;color:#fff">Kinjal K. Prajapati</div>
-                  <div style="font-size:.75rem;color:rgba(255,255,255,.5)">Operations &amp; Customer Engagement Lead</div>
-                </div>
-              </div>
-            </div>
+            <label>Industry Sector</label>
+            <select name="sector" class="form-control">
+              <option>Professional Services</option>
+              <option>Logistics / Distribution</option>
+              <option>Manufacturing</option>
+              <option>Facilities Management</option>
+              <option>Healthcare Support</option>
+              <option>Other</option>
+            </select>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- FOOTER -->
-  <div class="footer-advanced page-footer-block">
-    <div class="footer-top">
-      <div class="footer-col footer-col-brand">
-        <div class="footer-brand-logo">
-          <div class="footer-brand-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="white" opacity=".9"/>
-              <circle cx="12" cy="12" r="3" fill="#1A4FBF"/>
+        <div class="form-group">
+          <label>Enquiry Type</label>
+          <select name="enquiry" class="form-control">
+            <option>Request Pilot Programme Access</option>
+            <option>Request a Product Demo</option>
+            <option>General Enquiry</option>
+            <option>Investment Enquiry</option>
+            <option>Partnership Opportunity</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" class="form-control" required
+            placeholder="Tell us about your current governance challenges or any questions..."></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">
+          Submit Enquiry →
+        </button>
+
+      </form>
+
+      <!-- RIGHT SIDE (UNCHANGED) -->
+      <div class="contact-info-card">
+        <h3>SentinelIQ</h3>
+        <p>Governance Intelligence Platform for UK SMEs. Built for the Innovator Founder Visa application, 2026.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             </svg>
           </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-text">sentineliquk@outlook.com</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-text">United Kingdom</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Response Time</div>
+            <div class="contact-item-text">Within 2 business days</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer-advanced page-footer-block">
+  <div class="footer-top">
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand-logo">
+
+        <!-- ❌ Removed footer-brand-icon (SVG logo) -->
+
           <div class="footer-brand-title">Sentinel<span>IQ</span></div>
         </div>
         <p>A cloud-based Governance Intelligence Platform for UK SMEs. Transforming daily governance operations into structured risk insights  for the businesses that can't afford enterprise-grade complexity.</p>
